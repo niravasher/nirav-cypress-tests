@@ -9,16 +9,3 @@ jobs:
       - name: Event Information
         run: |
           echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
-
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    name: Run Web App
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Web App
-        run: |
-          echo "Build Web App"
